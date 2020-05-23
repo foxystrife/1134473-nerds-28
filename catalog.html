@@ -24,7 +24,72 @@
     <section>
       <h2>Фильтр шаблонов</h2>
       <!-- Фильтр шаблонов-->
+      <form class="filter" method="get" action="https://htmlacademy.ru">
+        <fieldset class="price">
+          <legend class="title">Стоимость</legend>
+          <input type="range" min="0" max="15000"> 
+          <!--поля для ввода диапазона цены -->
+          <span class="range-text">От</span>
+          <input class="text-value" value="0"> 
+          <span class="range-label">руб.</span>
+          <span class="range-text">До</span>
+          <input class="text-value" value="15000">
+          <span class="range-label">руб.</span>      
+        </fieldset>
+
+        <fieldset class="layout">
+          <legend class="title">Сетка</legend>
+          <!-- радиокнопки -->
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input" type="radio" name="grid" value="adaptive" id="adaptive">
+              <label for="adaptive" class="field-filter">Адаптивный</label> 
+            </li>
+              
+            <li class="filter-option">
+              <input class="filter-input" type="radio" name="grid" value="rubber" id="rubber">  
+              <label for="rubber" class="field-filter">Резиновый</label> 
+            </li>
+
+            <li class="filter-option">
+              <input class="filter-input" type="radio" name="grid" value="fixed" id="fixed"> 
+              <label for="fixed" class="field-filter">Фиксированный</label> 
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset class="feature">
+          <legend class="title">Особенности</legend>
+          <!--чек боксы -->
+          <ul>
+            <li class="filter-option">
+              <input class="filter-input" type="checkbox" name="specific" id="slider" checked>
+              <label for="slider" class="field-filter">Слайдер</label>
+            </li>
+
+            <li class="filter-option">
+              <input class="filter-input" type="checkbox" name="advantage" id="advantage">
+              <label for="advantage" class="field-filter">Блок преимуществ</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input" type="checkbox" name="news" id="news" checked>
+              <label for="news" class="field-filter">Новости</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input" type="checkbox" name="gallery" id="gallery">
+              <label for="gallery" class="field-filter">Галерея</label>
+            </li>
+            <li class="filter-option">
+              <input class="filter-input" type="checkbox" name="basket" id="basket">
+              <label for="basket" class="field-filter">Корзина</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit" class="filter-button">Показать</button>
+      </form>
     </section>
+
     <!-- Строка сортировки По Цене, По Типу, По Названию -->
     <div class="sort">
       <span>Сортировать</span>
