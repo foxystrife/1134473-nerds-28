@@ -1,0 +1,222 @@
+/* Variables */
+
+:root {
+  --basic-light-grey: #EEEEEE;
+  --basic-red: #F8565A;
+  --basic-green: #00CA74;
+  --basic-yellow: #EFC849;
+  --basic-black: #000000;
+  --basic-white: #ffffff;
+
+  --special: #663d15;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* Global */
+
+body {
+  min-width: 1160px;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.page-header {
+  background-color: var(--basic-light-grey);
+}
+
+.main-navigation {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+  color: #000000;	
+}
+
+.site-navigation,
+.filter-option,
+.socials-list,
+.catalog-list {
+  list-style: none;
+}
+
+
+.site-navigation-current a:not([href]) {
+  background-color: var(--basic-light-grey);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.user-navigation a {
+  color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus{
+  background-color: var(--basic-white);
+}
+
+/* Services*/
+
+.services-item {
+  text-align: left;
+}
+
+.services-item h3 {
+
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.services-item p {
+  color: #283136;
+}
+
+.button {
+  width: 160px;
+  height: 50px;
+  border-radius: 3px;
+  font: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.order:active {
+  color: rgba(255, 255, 255, 0.302);
+}
+
+.red {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+.red:hover {
+  background-color: #E74246;
+}
+
+.red:active {
+  background-color: #D7373B;
+}
+
+.green {
+  background-color: var(--basic-green);
+}
+
+.green:hover {
+  background-color: #00BC6C;
+}
+
+.green:active {
+  background-color: #00AA62;
+}
+
+.yellow {
+  background-color: var(--basic-yellow);
+}
+
+.yellow:hover {
+  background-color: #EAB534;
+}
+
+.yellow:active {
+  background-color: #E5A722;
+}
+
+.call-slogan h3 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.call-friends p {
+  line-height: 22px;
+  color: #444444;
+}
+
+
+/*Features*/
+
+.features-list {
+  list-style: none;
+}
+
+
+
+/*Каталог*/
+h1.catalog-title {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.layout .title,
+.feature .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+/*текст в фильтрах*/
+.field-filter {
+  font-size: 16px;
+  line-height: 19px;
+  color: #283136;
+}
+
+.filter-button {
+  width: 260px;
+  height: 50px;
+  background-color: var(--basic-light-grey);
+  color: var(--basic-black);
+}
+
+.buy {
+  width: 200px;
+  height: 50px;
+}
+
+p.catalog-description {
+  text-align: center;
+  color: #666666;
+}
+
+.catalog-item-image h3 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  text-transform: uppercase;
+}
