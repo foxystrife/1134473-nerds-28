@@ -17,7 +17,7 @@
         <ul class="site-navigation">
           <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Клиенты</a></li>
-          <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li> 
+          <li class="site-navigation-item current"><a class="site-navigation-link" >Магазин</a></li> 
           <li class="site-navigation-item"><a class="site-navigation-link" href="blank.html">Контакты</a></li>
         </ul>
         <a href="blank.html">Корзина</a>
@@ -33,7 +33,7 @@
       <!-- Фильтр шаблонов-->
       <form class="filter" method="get" action="https://htmlacademy.ru">
         <fieldset class="price">
-          <legend class="title">Стоимость</legend>
+          <legend>Стоимость</legend>
           <input type="range" min="0" max="15000"> 
           <!--поля для ввода диапазона цены -->
           <span class="range-text">От</span>
@@ -45,7 +45,7 @@
         </fieldset>
 
         <fieldset class="layout">
-          <legend class="title">Сетка</legend>
+          <legend>Сетка</legend>
           <!-- радиокнопки -->
           <ul>
             <li class="filter-option">
@@ -66,7 +66,7 @@
         </fieldset>
 
         <fieldset class="feature">
-          <legend class="title">Особенности</legend>
+          <legend>Особенности</legend>
           <!--чек боксы -->
           <ul>
             <li class="filter-option">
@@ -98,20 +98,20 @@
     </section>
 
     <!-- Строка сортировки По Цене, По Типу, По Названию -->
-    <div class="sort">
-      <span>Сортировать</span>
-    </div>
-    <div class="sort-cost">
-      <p>По цене</p>
-    </div>
-    
-    <div class="sort-type">
-      <p>По типу</p>      
-    </div>
-    
-    <div class="sort-name">
-      <p>По названию</p>      
-    </div>  
+
+    <section class="sort-row">
+      <h3 class="visually-hidden">Сортировка шаблонов по цене, по типу, по алфавиту</h3>
+      <p class="sort-title">Сортировать</p>
+      <ul class="sort-list">
+        <li class="sort-item active"><a class="sort-link active" href="#">По цене</a></li>
+        <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
+        <li class="sort-item"><a class="sort-link" href="#">По имени</a></li>
+      </ul>
+      <ul class="sort-arrow">
+        <li class="arrow active"><a class="sort-link" href="#">По возрастанию</a></li>  <!-- УБРАТЬ НАДПИСЬ ПОСЛЕ УСТАНОВКИ СТРЕЛОК-->
+        <li class="arrow"><a class="sort-link" href="#">По убыванию</a></li>            <!-- УБРАТЬ НАДПИСЬ ПОСЛЕ УСТАНОВКИ СТРЕЛОК -->
+      </ul>
+    </section>
 
     <section>
       <h2 class="visually-hidden">Список шаблонов - Карточки товаров</h2>
@@ -124,8 +124,8 @@
           <div class="hidden-card">
             <p class="catalog-description">Информационный сайт<br>для туристов</p>
             <button type="button" class="button buy red">9 900 руб.</button>
-        </div>
-       </li>
+          </div>
+        </li>
         
         <li class="catalog-item">
           <a class="catalog-item-image" href="#">
@@ -183,6 +183,19 @@
         </li>
       </ul>
     </section>
+
+    <!-- Пагинация-->
+    <section class="pagination">
+      <h3 class="visually-hidden">Навигация по каталогу сайта</h3>
+      <!--пагинация -->
+      <ul class="pagination-list">
+        <li class="pagination-item prev"><a class="pagination-link" href="#">Предыдущая</a></li> 
+        <li class="pagination-item current"><a class="pagination-link">1</a></li>   
+        <li class="pagination-item"><a class="pagination-link" href="#">2</a></li>  
+        <li class="pagination-item"><a class="pagination-link" href="#">3</a></li>  
+        <li class="pagination-item next"><a class="pagination-link" href="#">Следующая</a></li>  
+      </ul>
+    </section>
   </main>
 
   <!-- скопировано из index.html-->
@@ -197,10 +210,11 @@
     <!-- Секция Напишите нам и вызов формы-->
     <!-- Адрес и вызов формы Напишите нам-->
     <section class="address">
-      <h3>Напишите нам</h3>
-      <p>NЁrds design studio</p>
-      <p>191186 Санкт-Петербург ул. Б. Конюшенная, д. 19/8</p> 
-      <p>тел. +7 (812) 275-75-75</p>
+      <h3 class="visually-hidden">Напишите нам</h3>
+      <p class="company-name">NЁrds design studio</p>
+      <p class="company-address">191186 Санкт-Петербург ул. Б. Конюшенная, д. 19/8</p> 
+      <p class="company-phone">тел. +7 (812) 275-75-75</p>
+      <button type="button" class="button red">Напишите нам</button>
     </section>
 
     <section class="call-friends">
@@ -235,6 +249,5 @@
       <button type="submit">Отправить</button>
     </form>
   </section>
-
 </body>
 </html>

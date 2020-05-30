@@ -8,7 +8,9 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
 
-  --special: #663d15;
+  --special: green;
+  /*--special: #663d15;*/
+
 }
 
 .visually-hidden {
@@ -38,6 +40,8 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-black);
+/*  background-color: var(--basic-light-grey);*/
 }
 
 img {
@@ -54,20 +58,59 @@ img {
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
+  color: var(--basic-black);	
   background-color: var(--basic-light-grey);
-  color: #000000;	
 }
 
+.main-navigation a {
+  color: var(--basic-black);
+}
+
+.main-navigation a:hover {
+  color: #FB565A;
+}
+
+.main-navigation a:active {
+  color: var(--basic-black);
+  opacity: 0.3;
+}
+
+
+.site-navigation-item.current {
+    border-bottom: 2px solid red;
+    /*border-image: url(../img/background/underline.png) 0 0 1 0;*/
+  }
+
+.basket-button {
+  color: #000;
+}
+
+.basket-button:hover {
+  color: rgb(251, 86, 90);
+}
+
+.basket-button:active {
+  color: #000;
+  opacity: 0.3;
+}
+
+
+
+/**/
 .site-navigation,
 .filter-option,
+.sort-list,
+.sort-arrow,
 .socials-list,
 .catalog-list {
   list-style: none;
 }
 
-
-.site-navigation-current a:not([href]) {
-  background-color: var(--basic-light-grey);
+/*запрещаем взаимодействие с текущим элементом*/
+.site-navigation a:not([href]) {
+  pointer-events: none; /* делаем элемент неактивным для взаимодействия */
+  cursor: default; /*  курсор в виде стрелки */
+  color: var(--basic-black); /* цвет текста чёрный */
 }
 
 /* User navigation */
@@ -79,8 +122,31 @@ img {
 
 .site-navigation a:hover,
 .site-navigation a:focus{
-  background-color: var(--basic-white);
+  background-color: var(--basic-light-grey);
 }
+
+/*Слайдер*/
+.slider {
+  background-color: var(--basic-light-grey);
+}
+.slider-slogan {
+  font-weight: 500;
+  font-size: 55px;
+  line-height: 55px;
+}
+
+.slider-text {
+  color: #283136;
+}
+
+.button.slider {
+  width: 240px;
+  height: 50px;
+  border-radius: 3px;
+}
+
+/**/
+
 
 /* Services*/
 
@@ -189,6 +255,29 @@ h1.catalog-title {
   text-transform: uppercase;
 }
 
+/*фильтры и сортировка*/
+
+.filter legend {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  /* identical to box height, or 167% */
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.filter ul {
+  list-style: none;
+  line-height: 18px;
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+  color: var(--special);
+}
+
+
+
 /*текст в фильтрах*/
 .field-filter {
   font-size: 16px;
@@ -219,4 +308,105 @@ p.catalog-description {
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
+}
+
+/*Мы-гордые*/
+
+.features-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+}
+
+p.features-principle {
+   color: #283136;
+}
+
+p.we-do {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #283136;
+}
+
+.features-list {
+ color: #283136;
+}
+
+.numbers {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.percent {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.features-item {
+  color: #283136;
+}
+
+.features-item-2 {
+  line-height: 18px;
+  color: #283136;
+}
+
+/*Адрес*/
+
+.address {
+  line-height: 18px;
+  color: #666666;
+}
+
+.company-name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.sort-item a{
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;  
+  color: var(--basic-black);  
+  opacity: 0.3;
+}
+
+.sort-item.active a {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;  
+  color: var(--basic-black); 
+  opacity: 1;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item {
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--basic-light-grey);
+}
+
+.pagination-item a:hover {
+  background-color: #DFDFDF;
+  /*box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);*/
+  /*border-radius: 3px;*/
+}
+
+.pagination-item a:active {
+  background-color: #D5D5D5;
+  color: #000000;
+  opacity: 0.3;
+}
+
+.pagination-item.current {
+  background-color: var(--basic-white);
 }
