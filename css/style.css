@@ -49,18 +49,85 @@ img {
   height: auto;
 }
 
-.page-header {
-  background-color: var(--basic-light-grey);
+.page {
+  height: 100%;
 }
 
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+/*.page-header {margin-bottom: 70px;    ВРЕМЕННО} */
+
 .main-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 30px;
   text-transform: uppercase;
-  color: var(--basic-black);	
+  color: var(--basic-black);  
+/*  background-color: var(--basic-light-grey);*/
+
+  color: var(--basic-white);
+  background-color: transparent;
+
+}
+.main-navigation-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+}
+
+.logo {
+  width: 160px;
+  height: 65px;
+}
+
+/*Container*/
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.main-navigation-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.site-navigation {
+  width:576px;
+  margin: 0px;
+  padding: 0px;
+  min-height: 30px;
+
+  list-style: none;
+}
+
+.user-navigation {
+  max-width: 125px;
+  padding-left: 30px;
+
+}
+
+.user-navigation .basket-link {
+  padding-left: 50px;
+}
+
+/* Main navigation */
+
+.page-header {
   background-color: var(--basic-light-grey);
 }
+
+
 
 .main-navigation a {
   color: var(--basic-black);
@@ -76,10 +143,12 @@ img {
 }
 
 
+
 .site-navigation-item.current {
     border-bottom: 2px solid red;
     /*border-image: url(../img/background/underline.png) 0 0 1 0;*/
   }
+
 
 .basket-button {
   color: #000;
@@ -102,7 +171,9 @@ img {
 .sort-list,
 .sort-arrow,
 .socials-list,
-.catalog-list {
+.catalog-list,
+.description-list,
+.statistics-list {
   list-style: none;
 }
 
@@ -150,8 +221,22 @@ img {
 
 /* Services*/
 
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 100px;
+  margin: 0;
+  padding: 0;
+
+  margin-bottom: 80px;
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
 .services-item {
   text-align: left;
+
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
 }
 
 .services-item h3 {
@@ -161,10 +246,13 @@ img {
   line-height: 30px;
   text-align: left;
   text-transform: uppercase;
+  margin-top: 25px;
+  margin-bottom: 16px;
 }
 
 .services-item p {
   color: #283136;
+  margin-bottom: 32px;
 }
 
 .button {
@@ -232,15 +320,133 @@ img {
 }
 
 
-/*Features*/
+/*About-Description-Statistic-Features*/
 
-.features-list {
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 73px;
+
+  outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+/*.features-list {
   list-style: none;
+}*/
+
+.description {
+  width: 650px;
+
+
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.statistics {
+
+  width: 374px;
+ 
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+}
+
+/*Мы-гордые*/
+
+.description-title {
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 45px;
+  margin-bottom: 32px;
+}
+
+p.description-principle {
+   color: #283136;
+}
+
+.description p.we-do {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  color: #283136;
+}
+
+.statistics p.we-do {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: #283136;
 }
 
 
+.description-list,
+.statistics-list {
+ color: #283136;
+}
+
+.numbers {
+  font-weight: bold;
+  font-size: 45px;
+  line-height: 64px;
+}
+
+.percent {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 40px;
+}
+
+.description-item {
+  color: #283136;
+}
+
+.statistics-item {
+  line-height: 18px;
+  color: #283136;
+}
+
+/* Footer*/
+.main-footer {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+
+}
+
+.map {
+  background-color: var(--basic-light-grey);
+}
+
+.call-friends {
+  width: 660px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px;
+
+}
+
+.socials {
+  width: 261px;  
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px; 
+}
 
 /*Каталог*/
+
+.page-catalog { 
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+
+.page-catalog .catalog-title {
+  grid-column: 1 / -1;
+
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+} 
+
 h1.catalog-title {
   font-weight: 500;
   font-size: 55px;
@@ -255,7 +461,93 @@ h1.catalog-title {
   text-transform: uppercase;
 }
 
+.catalog-order {
+  width: 760px;
+  margin-left: 120px;  /*!!!  140 !!!*/
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px;
+  margin: 0px;
+}
+
+.catalog-item {
+  position: relative;
+  width: 360px;
+  min-height: 578px;  /*620px*/
+  margin-right: 37px;  /*!!! 37 px !!!*/
+  margin-bottom: 31px;
+  padding-top: 23px;
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.catalogue-item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 40px;
+  background-image: url(../img/shop/browser-repose.jpg);
+}
+
+.catalogue-item:hover::before {
+  background-image: url(../img/shop/browser.jpg);
+}
+
+.hidden-card { 
+  /*display: none;*/
+  display: block;
+  background-color: rgb(233,233,233);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 100%;
+  min-height: 231px;
+}
+
+.catalog-item-image img {
+  display: block;
+}
+
+li.catalogue-item:hover > .hidden-card {
+  display: block;
+}
+
+.catalogue-description {
+  line-height: 18px;
+  text-align: center; 
+  margin: 0;  
+  margin-top: 18px;
+  margin-bottom: 27px;
+}
+
 /*фильтры и сортировка*/
+.filters {
+  
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
+.catalog {
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+}
+
+.pagination {
+  outline-offset: -5px;
+  outline: 5px solid rgba(0, 0, 255, 0.7);
+}
+
+.sort-row {  outline-offset: -5px;
+  outline: 5px solid rgba(0, 255, 255, 0.7);
+}
+
 
 .filter legend {
   font-weight: bold;
@@ -310,48 +602,6 @@ p.catalog-description {
   text-transform: uppercase;
 }
 
-/*Мы-гордые*/
-
-.features-title {
-  font-weight: 500;
-  font-size: 45px;
-  line-height: 45px;
-}
-
-p.features-principle {
-   color: #283136;
-}
-
-p.we-do {
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #283136;
-}
-
-.features-list {
- color: #283136;
-}
-
-.numbers {
-  font-weight: bold;
-  font-size: 45px;
-  line-height: 64px;
-}
-
-.percent {
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 40px;
-}
-
-.features-item {
-  color: #283136;
-}
-
-.features-item-2 {
-  line-height: 18px;
-  color: #283136;
-}
 
 /*Адрес*/
 
