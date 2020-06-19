@@ -10,27 +10,24 @@
 
 <body class="page-body">
 	<header class="page-header">
-		<nav class="main-navigation" aria-label="Навигация по сайту Нёрдс">
-			<a class="logo index">
+		<nav class="main-navigation container" aria-label="Навигация по сайту Нёрдс">
+			<a class="logo">
 				<img src="img/logo/nerds-logo.svg" width="160" height="62" alt="Логотип веб-студии Нёрдс">
 			</a>
 
-				<div class="main-navigation-wrapper">
-					<div class="container">
-						<ul class="site-navigation">
-							<li class="site-navigation-item"><a class="" href="blank.html">Студия</a></li>
-  				            <li class="site-navigation-item"><a class="" href="blank.html">Клиенты</a></li>
-  				            <li class="site-navigation-item"><a class="" href="catalog.html">Магазин</a></li>
-  				            <li class="site-navigation-item"><a class="" href="blank.html">Контакты</a></li>
- 				        </ul>
- 				        <div class="user-navigation">
- 				        	<a class="basket-link" href="blank.html">Корзина</a>
- 				        </div>
- 				    </div>
- 				</div>
+			<ul class="site-navigation">
+				<li class="site-navigation-item"><a class="" href="blank.html">Студия</a></li>
+  				<li class="site-navigation-item"><a class="" href="blank.html">Клиенты</a></li>
+  				<li class="site-navigation-item"><a class="" href="catalog.html">Магазин</a></li>
+  				<li class="site-navigation-item"><a class="" href="blank.html">Контакты</a></li>
+  			</ul>
 
- 		</nav>
- 	</header>
+  			<div class="user-navigation">
+  				<a class="basket-link" href="blank.html">Корзина</a>
+  			</div>
+  		</nav>
+  	</header>
+ 
 
   	<main class="container">
   		<h1 class="visually-hidden">Веб-студия Нёрдс. Сайты, приложения, презентации</h1>
@@ -94,7 +91,7 @@
   			</section>
   		</section>
 
-  		<div class="index-columns">
+  		<div class="about index-columns">
   				<h2 class="visually-hidden">О нас</h2>
   				<section class="description">
   					<h2 class="visually-hidden">О студии веб-дизайна Нёрдс</h2>
@@ -110,6 +107,7 @@
 
   				<section class="statistics">
   					<h2 class="visually-hidden">Верстаем как для себя, вовремя и бережём ваши деньги</h2>
+  				    <img src="img/illustration/nerds-illustration-1.png" width="360" height="208" alt="Фирменная картинка студии Нёрдс">
   				    <p class="we-do">С 2004 года любим точность во всём</p>
   				    <!-- СПИСОК ФИЧЕЙ -->
   				    <ul class="statistics-list">
@@ -121,45 +119,76 @@
   		</div>
   		
 
-  		<section class="clients"> 
+  		<section class="clients">
   			<h2 class="visually-hidden">Наши клиенты</h2>
-  			<a class="clients-item academy" href="https://htmlacademy.ru/intensive/htmlcss" title="Наш клиент HTML Academy"></a>
-  			<a class="clients-item borodinski" href="#" title="Наш клиент Барбешоп Borodinski"></a> 
-  			<a class="clients-item pink" href="#" title="Наш клиент Компания Pink"></a>  
-  			<a class="clients-item mishka" href="#" title="Наш клиент Интернет-магазин Mishka"></a>  
+  			<ul class="clients-list">
+  				<li class="clients-item">
+  					<a href="https://htmlacademy.ru/intensive/htmlcss" title="Наш клиент HTML Academy">
+  						<img src="img/clients/htmlacademy-on.png" width="199" height="68" alt="HtnlAcademy">
+  					</a>
+  				</li>
+  			    <li class="clients-item">
+  			    	<a href="#" title="Наш клиент Барбешоп Borodinski">
+  			    		<img src="img/clients/logo-borodinski-on.png" width="209" height="90" alt="Барбешоп Бородински">  			    		
+  			    	</a>
+  			    </li> 
+  			    <li class="clients-item">
+  			    	<a href="#" title="Наш клиент Компания Pink">
+  			    		<img src="img/clients/logo-pink-on.png" width="185" height="52" alt="Компания Pink">  			    	
+  			    	</a>
+  			    </li>  
+  			    <li class="clients-item">
+  			    	<a href="#" title="Наш клиент Интернет-магазин Mishka">
+  			    		<img src="img/clients/logo-mishka-on.png" width="173" height="84" alt="Интернет-магазин мягких игрушек Мишка">  			    		
+  			    	</a>
+  			    </li>  
+  			</ul>
   		</section>
   	</main>
 
   	<!-- копируем на страницу Каталога-->
   	<footer class="page-footer main-footer">
-  		<div class="container">
+  		<div class="map">
   			<h2 class="visually-hidden">Как нас найти в реале и виртуале</h2>
-  			<section class="map">
+  			<section class="container">
   				<h3 class="visually-hidden">Карта проезда к офису веб-студии</h3>
-  				<img src="img/map/map.png" width="1140" height="416" alt="Карта проезда к офису веб-студии Нёрдс">
+  				<!--<img src="img/map/map.png" width="1140" height="416" alt="Карта проезда к офису веб-студии Нёрдс">-->
   			    <!-- Карта -->
-  		    </section>
+  			    <!-- Секция Напишите нам и вызов формы-->
+  			    <!-- Адрес и вызов формы Напишите нам-->
+  			    <section class="address">
+  			    	<h3 class="visually-hidden">Напишите нам</h3>
+		            <p class="company-name">NЁrds design studio</p>
+		            <p class="company-address">191186 Санкт-Петербург<br>ул. Б. Конюшенная, д. 19/8</p> 
+   			        <p class="company-phone">тел. +7 (812) 275-75-75</p>
+   			        <button type="button" class="button red">Напишите нам</button>
+   		        </section>
+   		    </section>
   		</div>
-
-  		    <!-- Секция Напишите нам и вызов формы-->
-
-     		<!-- Адрес и вызов формы Напишите нам-->
-		<section class="address">
-			<h3 class="visually-hidden">Напишите нам</h3>
-		    <p class="company-name">NЁrds design studio</p>
-		    <p class="company-address">191186 Санкт-Петербург ул. Б. Конюшенная, д. 19/8</p> 
-   			<p class="company-phone">тел. +7 (812) 275-75-75</p>
-   			<button type="button" class="button red">Напишите нам</button>
-   		</section>
 
    		<div class="container">		
    			<div class="index-columns">     	
    				<section class="socials">
    					<h3 class="visually-hidden">Студия Нёрдс в социальных сетях. Присоединяйтесь</h3>
 					<ul class="socials-list">
-    			    	<li class="socials-item"><a href="" title="Мы ВКонтакте">ВКонтакте</a></li>
-        				<li class="socials-item"><a href="" title="Мы в фейсбуке">ФБ</a></li>
-        				<li class="socials-item"><a href="" title="Мы в Инстаграм">Инстаграм</a></li>
+    			    	<li class="socials-item">
+    			    		<a href="" title="Мы ВКонтакте">
+    			    			<span class="visually-hidden">ВКонтакте</span>
+    			    			<svg width="27" height="15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z" fill="#fff"></path></svg>
+    			    		</a>
+    			    	</li>
+        				<li class="socials-item">
+        					<a href="" title="Мы в фейсбуке">
+        						<span class="visually-hidden">ФБ</span>
+        						<svg width="12" height="22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z" fill="#fff"></path></svg>
+        					</a>
+        				</li>
+        				<li class="socials-item">
+        					<a href="" title="Мы в Инстаграм">
+        						<span class="visually-hidden">Инстаграм</span>
+        						<svg width="21" height="21" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0h15c1.65 0 3 1.35 3 3v15c0 1.65-1.35 3-3 3H3c-1.65 0-3-1.35-3-3V3c0-1.65 1.35-3 3-3zm11 10.5C14 8.57 12.43 7 10.5 7S7 8.57 7 10.5 8.57 14 10.5 14s3.5-1.57 3.5-3.5zM3 18V9h1.181c-.118.491-.18.995-.181 1.5a6.5 6.5 0 1013 0 6.451 6.451 0 00-.181-1.5H18v9H3zM14 7h4V3h-4v4z" fill="#fff"></path></svg>
+        					</a>
+        				</li>
      			    </ul>
      			</section>
 					
